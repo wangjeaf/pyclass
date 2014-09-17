@@ -1,4 +1,4 @@
-# PyClass - Python Style Class in JavaScript
+# PyClass - Write Python Class in JS
 
 Write Python style class in JS, compatible for Nodejs and Browsers.
 
