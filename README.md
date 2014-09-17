@@ -10,11 +10,11 @@ Write Python style class in JS, compatible for Nodejs and Browsers.
 
 ## Features
 
-- `new Class(Parent, function(){})` Simple Class definition
-- `self` Auto-binded, avoid `this`
+- `new Class([Parent,] function(){})` Simple Class definition
+- `self` Self Auto-Binded, avoid `this`
 - `__init__` Clear initializer
-- `__static__` Add static member for Class in a simple way.
-- `parent()` Call parent method as you wish
+- `__static__` Simplest way to add static member for Class
+- `parent()` Call parent method as you wish.
 
 ## Usage & Demo
 
