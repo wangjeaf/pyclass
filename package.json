@@ -1,0 +1,27 @@
+{
+  "name": "pyclass",
+  "description": "Write Python style class in Nodejs",
+  "version": "0.0.2",
+  "author": "wangjeaf <wangjeaf@gmail.com>",
+  "keywords": [
+    "OOP",
+    "Python",
+    "Nodejs",
+    "Class",
+    "self",
+    "me"
+  ],
+  "repository": "git://github.com/wangjeaf/pyclass",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/wangjeaf/pyclass/blob/master/README.md"
+    }
+  ],
+  "dependencies": {
+    "colors": "^0.6.2"
+  }
+}
