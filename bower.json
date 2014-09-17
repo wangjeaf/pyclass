@@ -1,0 +1,12 @@
+{
+  "name": "pyclass",
+  "version": "0.1.2",
+  "main": "./index.js",
+  "ignore": [
+    "LICENSE.md",
+    ".gitignore",
+    "package.json",
+    "test.js",
+    "README.md"
+  ]
+}
