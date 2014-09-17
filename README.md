@@ -19,6 +19,7 @@ Write Python style class in JS, compatible for Nodejs and Browsers.
 ## Usage & Demo
 
 ```javascript
+
 var Class = require('pyclass')
 
 // Person as a Class
@@ -61,17 +62,18 @@ var Student = new Class(Person, function() {
     }
 })
 
-Person.sleep()   // ==> Haha, I am going to sleep now
 
 var james = new Person('James', 2);
 james.sayHi()    // ==> Hi, I am James, I am 2 years old.
 
+Person.sleep()   // ==> Haha, I am going to sleep now
 
-Student.sleep()  // ==> Haha, I am going to sleep now
 
 var lily = new Student('Lily', 12, 'Some Nice High School')
 lily.sayHi();    // ==> Hi, I am Lily, I am 12 years old.
                  // ==> And now, I am a student in Some Nice High School
+Student.sleep()  // ==> Haha, I am going to sleep now
+
 ```
 
 ## License
