@@ -32,7 +32,7 @@ var Person = new Class(function() {
         self._age = age
     }
 
-    // self is not this, so is not a keyword.
+    // self is not this, so it is not a keyword.
     this.sayHi = function(self) {
         setTimeout(function() {
             console.log('\n\nHi, I am ' + self._name + ', I am ' + self._age + ' years old.')
