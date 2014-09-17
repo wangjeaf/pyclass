@@ -33,7 +33,7 @@ var Student = new Class(Person, function() {
 
     this.sayHi = function(self) {
         // call parent sayHi
-        self.parent();
+        self.parent()
         setTimeout(function() {
             console.log('And now, I am a student in ' + self._school)
         }, 100);
