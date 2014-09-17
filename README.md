@@ -1,14 +1,14 @@
 # PyClass - Python Style Class in JavaScript
 
-Write Python style class in javascript, including Nodejs environment and Browser enviroment.
-
-Feel free to use `self` `self.parent` `__init__` `__static__` in your JS code.
+Write Python style class in JS, compatible for Nodejs and Browsers.
 
 ## Install
 
 `npm install pyclass`
 
-## Special List
+`bower install pyclass`
+
+## Features
 
 - `new Class(Parent, function(){})` Simple Class definition
 - `self` Auto-binded, avoid `this`
