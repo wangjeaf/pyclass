@@ -1,25 +1,29 @@
-var toString = Object.prototype.toString
-var slice = [].slice
 
-function isFunction(f) {
-    return toString.call(f) == '[object Function]'
-}
 
-function inherit(cls, upper) {
-    function F(){}
-    F.prototype = upper.prototype
-    cls.prototype = new F()
-    cls.prototype.constructor = cls.prototype.me = cls
-    cls.__parent = cls.prototype.__parent = upper
-
-    for(var prop in upper) {
-        if (upper.hasOwnProperty(prop)) {
-            cls[prop] = upper[prop]
-        }
-    }
-}
 
 var Class = function(upper, init) {
+
+    function isFunction(f) {
+        return toString.call(f) == '[object Function]'
+    }
+
+    function inherit(cls, upper) {
+        function F(){}
+        F.prototype = upper.prototype
+        cls.prototype = new F()
+        cls.prototype.constructor = cls.prototype.me = cls
+        cls.__parent = cls.prototype.__parent = upper
+
+        for(var prop in upper) {
+            if (upper.hasOwnProperty(prop)) {
+                cls[prop] = upper[prop]
+            }
+        }
+    }
+
+    var toString = Object.prototype.toString
+    var slice = [].slice
+
     if (arguments.length == 1) {
         init = upper
         upper = Object
@@ -79,4 +83,6 @@ var Class = function(upper, init) {
     return cls
 }
 
-module.exports = Class
+if (typeof module != 'undefined') {
+    module.exports = Class
+}
