@@ -64,7 +64,7 @@ var Class = function(upper, init) {
 
     for (var prop in obj) {
         if (prop == 'parent') {
-            console.error('[pyclass error] parent is preserved word for pyclass');
+            console.error('[PyClass Error] parent is preserved word for pyclass');
             continue;
         }
         if (obj.hasOwnProperty(prop)) {
@@ -77,7 +77,7 @@ var Class = function(upper, init) {
     cls.prototype.parent = function() {
         var name = arguments.callee.caller.__name__
         if (!name) {
-            return console.error('[pyclass error] parent() should not be called in nested function')
+            return console.error('[PyClass Error] parent() should not be called in nested function')
         }
         this.__parent__.prototype[name].apply(this, arguments)
     }
