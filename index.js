@@ -11,6 +11,12 @@ function inherit(cls, upper) {
     cls.prototype = new F()
     cls.prototype.constructor = cls.prototype.me = cls
     cls.__parent = cls.prototype.__parent = upper
+
+    for(var prop in upper) {
+        if (upper.hasOwnProperty(prop)) {
+            cls[prop] = upper[prop]
+        }
+    }
 }
 
 var Class = function(upper, init) {

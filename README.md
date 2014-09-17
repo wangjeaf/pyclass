@@ -1,4 +1,25 @@
-var Class = require('./index')
+# PyClass - Python Style Class in JavaScript
+
+Write Python style class in javascript, including Nodejs environment and Browser enviroment.
+
+Feel free to use `self` `self.parent` `__init__` `__static__` in your JS code.
+
+## Install
+
+`npm install pyclass`
+
+## Special List
+
+- `new Class(Parent, function(){})` Simple Class definition
+- `self` Auto-binded, avoid `this`
+- `__init__` Clear initializer
+- `__static__` Add static member for Class in a simple way.
+- `parent()` Call parent method as you wish
+
+## Usage & Demo
+
+```javascript
+var Class = require('pyclass')
 
 // Person as a Class
 var Person = new Class(function() {
@@ -51,3 +72,8 @@ Student.sleep()  // ==> Haha, I am going to sleep now
 var lily = new Student('Lily', 12, 'Some Nice High School')
 lily.sayHi();    // ==> Hi, I am Lily, I am 12 years old.
                  // ==> And now, I am a student in Some Nice High School
+```
+
+## License
+
+`pyclass` is available under the terms of the [MIT License](https://github.com/wangjeaf/pyclass/blob/master/LICENSE.md).
