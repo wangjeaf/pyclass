@@ -12,11 +12,11 @@ No `var me/self/_i/SELF/that/_this_/_that_ = this` in your JS any more…
 
 ## Features
 
-- `new Class([Parent,] function(){})` Simple Class definition
+- `new Class([Parent,] function)` Simple Class definition
 - `self` Self Auto-Binded, avoid `this`
-- `__init__` Clear initializer
+- `__init__` Clear initializer for Class
 - `__static__` Simplest way to add static member for Class
-- `parent()` Call parent method as you wish.
+- `parent()` Call parent method as you wish
 
 ## Usage & Demo
 
@@ -80,4 +80,4 @@ Student.sleep()  // ==> Haha, I am going to sleep now
 
 ## License
 
-`pyclass` is available under the terms of the [MIT License](https://github.com/wangjeaf/pyclass/blob/master/LICENSE.md).
+`PyClass` is available under the terms of the [MIT License](https://github.com/wangjeaf/pyclass/blob/master/LICENSE.md).
