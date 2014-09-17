@@ -2,6 +2,8 @@
 
 Write Python style class in JS, compatible for Nodejs and Browsers.
 
+No `var me/self/_i/SELF/that/_this_/_that_ = this` in your JS any more…
+
 ## Install
 
 `npm install pyclass`

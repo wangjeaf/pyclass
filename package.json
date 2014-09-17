@@ -1,7 +1,7 @@
 {
   "name": "pyclass",
   "description": "Write Python style class in Nodejs",
-  "version": "0.2.1",
+  "version": "0.2.4",
   "author": "wangjeaf <wangjeaf@gmail.com>",
   "keywords": [
     "JavaScript",
